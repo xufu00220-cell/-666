@@ -394,17 +394,17 @@ private fun AnimatedBalanceNumber(
     targetValue: Double,
     modifier: Modifier = Modifier
 ) {
-    val animatedValue = remember { Animatable(0.0) }
+    val animatedValue = remember { Animatable(0f) }
     var hasStarted by remember { mutableStateOf(false) }
 
     LaunchedEffect(targetValue) {
         if (!hasStarted) {
             // 首次加载：从 0 动画到目标值
-            animatedValue.snapTo(0.0)
+            animatedValue.snapTo(0f)
             hasStarted = true
         }
         animatedValue.animateTo(
-            targetValue = targetValue,
+            targetValue = targetValue.toFloat()
             animationSpec = tween(
                 durationMillis = 1200,
                 easing = FastOutSlowInEasing

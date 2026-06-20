@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DeepSeek 余额</string>
+    <string name="total_balance">总余额</string>
+    <string name="topped_up_balance">充值余额</string>
+    <string name="granted_balance">赠送余额</string>
+    <string name="refresh">刷新</string>
+    <string name="settings">设置</string>
+    <string name="api_key">API Key</string>
+    <string name="enter_api_key">请输入 API Key</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="loading">加载中…</string>
+    <string name="error_network">网络错误，请检查连接</string>
+    <string name="error_api_key">请先设置 API Key</string>
+    <string name="error_unauthorized">API Key 无效</string>
+    <string name="last_updated">上次更新</string>
+    <string name="test_connection">测试连接</string>
+    <string name="connection_success">连接成功</string>
+    <string name="hide_balance">隐藏余额</string>
+    <string name="show_balance">显示余额</string>
+</resources>
